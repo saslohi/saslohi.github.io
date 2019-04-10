@@ -7,26 +7,27 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link rel="stylesheet" href="main.css">
-	<script src="suomikello.js"></script>
-	<script src="piilotusToggle.js"></script>
+	<script src="suomikello.js">
+	</script>
 
 	<title>Teksti-CV</title>
 
-<!--	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2"> favicon heitti jotain erroria?? -->
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2">
 
 
 
 	<!-- Cufon-skripta teksti-tv fonttia varten -->
 
-	<script src="cufon-yui.js" type="text/javascript"></script>
-	<script src="TerminalVector_400.font.js" type="text/javascript"></script>
-	<script type="text/javascript">
+	<script src="cufon-yui.js"></script>
+	<script src="TerminalVector_400.font.js"></script>
+	<script>
 		Cufon.replace('p'); // Works without a selector engine
 		Cufon.replace('#sub1'); // Requires a selector engine for IE 6-7, see above
 	</script>
 
 
 </head>
+
 
 <!-- Body -->
 
@@ -46,59 +47,66 @@
 				}
 			</style>
 
+
+
+
+
 			<!-- Headeri -->
 
 
-			<div id="ylin" style="background-color: black; width: 100%; height: 5">
-				<span style="text-align: left">P 700 700 </span> <span style="text-align: center">Saskan Teksti-CV</span> <span id="clock" class="topright"> </span>
+			<div id="ylin">
+				<span>P 100 100 </span>
+				<span>Saskan Teksti-CV</span>
+				<span id="clock" class="topright"> </span>
 			</div>
 			<br>
 
 			<!-- Banneri -->
-			<div style="background-color: #CC9900; width: 100&#37;; text-align: center; color: white; height: 20"></div>
-			<div style="background-color: #CC9900; width: 100&#37;; text-align: justify; color: white; height: 65">
+
+			<div style="ylabanneri-300"></div>
+			<div style="background-color: purple; width: 100%; text-align: justify; color: white; height: 65">
 				<font size="7"> Saska Lohi </font>
 			</div>
-			<div style="background-color: white; width: 100&#37;; text-align: left; color: #CC9900; height: 25">Teksti-CV</div>
-			<div style="background-color: #CC9900; width: 100&#37;; text-align: center; color: white; height: 20"></div>
+			<div style="background-color: white; width: 100%; text-align: left; color: purple; height: 25">Teksti-CV</div>
+			<div style="ylabanneri-300"></div>
 
 
-			<!-- Sisältö <-->
+			<!-- Sisalto -->
 
 			<div id="sisalto">
 				<br>
-				<p> Luottamustoimet:
+				<p> Tutkinnot: </p>
+				<p> Maatalous- ja metsätieteiden maisteri, metsänhoitaja - Helsingin yliopisto 2015 </p>
+				<p> Master of Science in Forest Ecology and Management - Michigan Technological University 2015 </p>
+				<p> Maatalous- ja metsätieteiden kandidaatti - Helsingin yliopisto 2012 </p>
+				<p> Ylioppilas - Kuusamon lukio 2008 </p>
+				<br>
+				<p>Opinnot:
+					<p> <a href="http://www.helsinki.fi/mmtdk/opiskelu/perustutkintoopiskelijat/dokumentit/opinto-opas_10_11/international_masters_degree/Atlantis%20degree%20requirements%202010-11_100427.pdf">ATLANTIS-maisteriohjelmassa 2012-2015 (Transatlanttinen metsätieteiden maisteriohjelma) </a></p>
 					<p>
-						<a href="#410" onclick="toggle_visibility('selostus1');">
-							<font style="color: #CC9900">410 </font>Helsingin metsäylioppilaat ry - Kansainvälisyysvastaava 2012-2013</a>
+							<a href="http://www.mmsaatio.fi/rahoituksen-tuloksia/vuoden-2013-tiedotteet/vaihto-opiskelut-michiganin-ylaniemimaalla-yhdysvalloissa.html"> <font style="color:purple">310 </font> Michigan Technological University - maisteriopinnot 2012-2015 </a>
 					</p>
-							<div id="selostus1" class="selostus">
-							Toimin Metsäylioppilaat Ry:n hallituksen jäsenenä, joka vastasi kansainvälisyyteen liittyvistä asioista <br>
-							Hain rahaa kansainvälisiin aktiviteetteihin, kuten tapahtumien osallistumismaksuihin ja lentolippuihin<br>
-							Mainostin kv-toimintaa ja innostin metsäylioppilaita lähtemään maailmalle, eritoten IFSA:n tapahtumiin sekä vaihto-opintoihin <br>
-						 </div>
+					<p style="margin-left: 4em">Pro gradu <a href="https://digitalcommons.mtu.edu/etdr/28/">
+					"Hitchhiking Bats on the Great Lakes of North America"</a></p>
+					<p>
+						<font style="color: purple"> 320 </font> Helsingin yliopisto - maisteriopinnot 2012-2015 </p>
+					<p style="margin-left: 4em">
+						Pääaine metsien ekologia ja käyttö <br>
+						Sivuaineet metsä- ja riistaeläintiede sekä trooppinen metsänhoito ja trooppisten metsien ekologia </p>
 
+					<p> <a href="http://www.mmsaatio.fi/rahoituksen-tuloksia/vuoden-2014-tiedotteet/vaihto-opiskelut-ruotsissa-uumajassa.html">
+						<font style="color: purple">330 </font> SLU Umeå - vaihto-opinnot kevät 2014 </a></p>
 					<p>
-						<a href="#420" onclick="toggle_visibility('selostus2');">
-							<font style="color: #CC9900">420 </font>IFSS Finland 2011 Järjestämistoimikunnan jäsen - 2009-2011  </a>
-					</p>
-					<div id="selostus2" class="selostus">
-						Olin mukana toimikunnassa, joka järjesti metsäylioppilaiden kansainvälisen maailmankokouksen (symposiumin) Suomessa vuonna 2011 <br>
-						Järjestelyt aloitettiin syksyllä 2009, ja liityin mukaan vastaamaan ruokahuollosta symposiumin alkuosan ajalta <br>
-						Kilpailutin ravintoloita ja pitopalveluita, ja toimin symposiumin aikana sekalaisissa järjestelyhommissa <br>
-						Symposiumiin osallistui yli 100 metsäylioppilasta ympäri maailmaa, kaikilta mantereilta paitsi Etelänapamantereelta <br>
-					 </div>
+						<font style="color: purple"> 340 </font> Helsingin yliopisto - Maatalous- ja metsätieteiden kandidaatti 2009-2012
+					<p style="margin-left: 4em">
+						Pääaine metsäekologia, sivuaine metsänarvioimistiede <br>
+						Kandidaatintutkielma: 'Batrachochytrium dendrobatidis ja Geomyces destructans - Millaisia ovat nämä tappajasienet?' </p>
+						<p style="margin-left: 4em">
+							<a href="https://www.metsatieteenaikakauskirja.fi/pdf/article6888.pdf">Tutustu kandintyöni aiheeseen esim. Metsätieteen aikakauskirjan artikkelini kautta! </a> </p>
 					<p>
-						<a href="#430" onclick="toggle_visibility('selostus3')">
-							<font style="color: #CC9900">430 </font>Helsingin metsäylioppilaat ry - Forstihuuto-lehden toimittaja 2009-2012  </a>
-					</p>
-					<div id="selostus3" class="selostus">
-						Kirjoittelin juttuja Metsäylioppilaiden järjestölehteen <br>
-					</div>
-					<br>
+							<font style="color: purple"> 350 </font> Kuusamon lukio - ylioppilastutkinto 2005-2008 </p>
+						<br>
 			</div>
-
-
 
 			<!-- Alalaidan valikko -->
 
@@ -113,6 +121,8 @@
 					<td class="alavalikko-600"> <a href="600.html">600 Muuta			</a></td>
 				</tr>
 			</table>
+
+
 
 
 
