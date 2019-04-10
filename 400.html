@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="main.css">
+	<script src="suomikello.js"></script>
+	<script src="piilotusToggle.js"></script>
+
+	<title>Teksti-CV</title>
+
+<!--	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v=2"> favicon heitti jotain erroria?? -->
+
+
+
+	<!-- Cufon-skripta teksti-tv fonttia varten -->
+
+	<script src="cufon-yui.js" type="text/javascript"></script>
+	<script src="TerminalVector_400.font.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		Cufon.replace('p'); // Works without a selector engine
+		Cufon.replace('#sub1'); // Requires a selector engine for IE 6-7, see above
+	</script>
+
+
+</head>
+
+<!-- Body -->
+
+<body bgcolor="black">
+	<font color="white">
+		<font face="TerminalVector" ; size="5" ; color="white">
+
+			<style>
+				@font-face {
+					font-family: TerminalVector;
+					src: url("TerminalVector.eot")/* EOT file for IE */
+				}
+
+				@font-face {
+					font-family: TerminalVector;
+					src: url("TerminalVector.ttf")/* TTF file for CSS3 browsers */
+				}
+			</style>
+
+			<!-- Headeri -->
+
+
+			<div id="ylin" style="background-color: black; width: 100%; height: 5">
+				<span style="text-align: left">P 700 700 </span> <span style="text-align: center">Saskan Teksti-CV</span> <span id="clock" class="topright"> </span>
+			</div>
+			<br>
+
+			<!-- Banneri -->
+			<div style="background-color: #CC9900; width: 100&#37;; text-align: center; color: white; height: 20"></div>
+			<div style="background-color: #CC9900; width: 100&#37;; text-align: justify; color: white; height: 65">
+				<font size="7"> Saska Lohi </font>
+			</div>
+			<div style="background-color: white; width: 100&#37;; text-align: left; color: #CC9900; height: 25">Teksti-CV</div>
+			<div style="background-color: #CC9900; width: 100&#37;; text-align: center; color: white; height: 20"></div>
+
+
+			<!-- Sisältö <-->
+
+			<div id="sisalto">
+				<br>
+				<p> Luottamustoimet:
+					<p>
+						<a href="#410" onclick="toggle_visibility('selostus1');">
+							<font style="color: #CC9900">410 </font>Helsingin metsäylioppilaat ry - Kansainvälisyysvastaava 2012-2013</a>
+					</p>
+							<div id="selostus1" class="selostus">
+							Toimin Metsäylioppilaat Ry:n hallituksen jäsenenä, joka vastasi kansainvälisyyteen liittyvistä asioista <br>
+							Hain rahaa kansainvälisiin aktiviteetteihin, kuten tapahtumien osallistumismaksuihin ja lentolippuihin<br>
+							Mainostin kv-toimintaa ja innostin metsäylioppilaita lähtemään maailmalle, eritoten IFSA:n tapahtumiin sekä vaihto-opintoihin <br>
+						 </div>
+
+					<p>
+						<a href="#420" onclick="toggle_visibility('selostus2');">
+							<font style="color: #CC9900">420 </font>IFSS Finland 2011 Järjestämistoimikunnan jäsen - 2009-2011  </a>
+					</p>
+					<div id="selostus2" class="selostus">
+						Olin mukana toimikunnassa, joka järjesti metsäylioppilaiden kansainvälisen maailmankokouksen (symposiumin) Suomessa vuonna 2011 <br>
+						Järjestelyt aloitettiin syksyllä 2009, ja liityin mukaan vastaamaan ruokahuollosta symposiumin alkuosan ajalta <br>
+						Kilpailutin ravintoloita ja pitopalveluita, ja toimin symposiumin aikana sekalaisissa järjestelyhommissa <br>
+						Symposiumiin osallistui yli 100 metsäylioppilasta ympäri maailmaa, kaikilta mantereilta paitsi Etelänapamantereelta <br>
+					 </div>
+					<p>
+						<a href="#430" onclick="toggle_visibility('selostus3')">
+							<font style="color: #CC9900">430 </font>Helsingin metsäylioppilaat ry - Forstihuuto-lehden toimittaja 2009-2012  </a>
+					</p>
+					<div id="selostus3" class="selostus">
+						Kirjoittelin juttuja Metsäylioppilaiden järjestölehteen <br>
+					</div>
+					<br>
+			</div>
+
+
+
+			<!-- Alalaidan valikko -->
+
+			<table style="color: white; width: 100%">
+
+				<tr>
+					<td class="alavalikko-100"> <a href="index.html">100 Etusivu			</a></td>
+					<td class="alavalikko-200"> <a href="200.html">200 Työkokemus			</a></td>
+					<td class="alavalikko-300"> <a href="300.html">300 Koulutus				</a></td>
+					<td class="alavalikko-400"> <a href="400.html">400 Luottamustoimet	</a></td>
+					<td class="alavalikko-500"> <a href="500.html">500 Taidot				</a></td>
+					<td class="alavalikko-600"> <a href="600.html">600 Muuta			</a></td>
+				</tr>
+			</table>
+
+
+
+</body>
+
+</html>

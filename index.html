@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="main.css">
+	<script src="suomikello.js"></script>
+	<script src="piilotusToggle.js"></script>
+
+	<title>Teksti-CV</title>
+
+	<link rel="icon" type="icon" href="favicon.ico?v=2">
+
+
+
+	<!-- Cufon-skripta teksti-tv fonttia varten -->
+
+	<script src="cufon-yui.js" type="text/javascript"></script>
+	<script src="TerminalVector_400.font.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		Cufon.replace('p'); // Works without a selector engine
+		Cufon.replace('#sub1'); // Requires a selector engine for IE 6-7, see above
+	</script>
+
+
+</head>
+
+<!-- Body -->
+
+<body bgcolor="black">
+	<font color="white">
+		<font face="TerminalVector" ; size="5" ; color="white">
+
+			<style>
+				@font-face {
+					font-family: TerminalVector;
+					src: url("TerminalVector.eot")/* EOT file for IE */
+				}
+
+				@font-face {
+					font-family: TerminalVector;
+					src: url("TerminalVector.ttf")/* TTF file for CSS3 browsers */
+				}
+			</style>
+
+
+
+
+
+			<!-- Headeri -->
+
+
+			<div id="ylin">
+				<span style="text-align: left">P 100 100 </span>
+				<span style="text-align: right">Saskan Teksti-CV</span>
+				<span id="clock" class="topright"> </span>
+			</div>
+
+			<br>
+
+			<!-- Banneri -->
+
+			<div style="ylabanneri-200"></div>
+			<div style="background-color: blue; width: 100&#37;; text-align: justify; color: white; height: 65">
+				<font size="7"> Saska Lohi </font>
+			</div>
+			<div style="background-color: white; width: 100&#37;; text-align: left; color: blue; height: 25">Teksti-CV</div>
+			<div style="ylabanneri-200"></div>
+
+
+			<!-- Otsikot -->
+
+			<div id="sisalto">
+				<br>
+				<br>
+				<p>
+					<a href="#110" onclick="toggle_visibility('selostus1');">
+						<font style="color: white">110 </font>Kuka on Saska Lohi? </a>
+				</p>
+				<div id="selostus1" class="selostus">
+					Saska on kuusamolainen, helsinkiläistynyt metsänhoitaja, joka on kiinnostunut kansainvälisistä metsiin, luontoon ja ilmastonmuutokseen liittyvistä asioista ja ilmiöistä
+				</div>
+				<p>
+					<a href="#120" onclick="toggle_visibility('selostus2');">
+						<font style="color: white">120 </font>Mikä ihmeen Teksti-CV? </a>
+				</p>
+				<div id="selostus2" class="selostus">
+					Teksti-CV on Teksti-TV:n inspiroima ansioluettelo, joka tarjoaa vähän erilaisemman pohjan ansioluettelolle kuin perinteinen paperinen CV tai <a href="https://www.linkedin.com/in/saskalohi/"> LinkedIn-profiili </a>
+				</div>
+				<p>
+					<a href="#130" onclick="toggle_visibility('selostus3');">
+						<font style="color: white">130 </font>Mitä täältä löytyy?</a>
+				</p>
+				<div id="selostus3" class="selostus">
+					Linkkejä klikkailemalla pääset tutustumaan Saskan työ- ja opiskeluhistoriaan, ja ajan saatossa ehkä kenties johonkin muuhunkin!
+				</div>
+				<p>
+					<a href="#140" onclick="toggle_visibility('selostus4');">
+						<font style="color: white">140 </font>Millainen olisi unelmatyöni?</a>
+				</p>
+				<div id="selostus4" class="selostus">
+						Ihannetyössäni voisin työskennellä sekä toimistossa että maastossa. Mieluiten ilmastonmuutokseen, metsäkatoon tai köyhyyteen liittyvien teemojen parissa, kansainvälisessä ympäristössä. Tykkään työskennellä osana ryhmää, mutta pidän myös hiljaisista tunneista, jolloin voin keskittyä yhteen asiaan kunnolla. Olen kuitenkin joustava, ja avoin kaikille ehdotuksille ja mahdollisuuksille.
+				</div>
+				<p>
+					<a href="#150" onclick="toggle_visibility('selostus5');">
+						<font style="color: white">150 </font>What on earth is this place?</a>
+				</p>
+				<div id="selostus5" class="selostus">
+					This is my (Saska Lohi) personal web page, inspired by a legendary <a href="https://en.wikipedia.org/wiki/Teletext">teletex</a> portal called <a href="https://yle.fi/aihe/tekstitv"> Teksti-TV by YLE (Finnish Broadcasting Company)</a>. I could make an English version in the future, but the design might not make any sense if you are not familiar with YLE's teletext pages, so at least at the moment my Teksti-CV is targeted to Finnish audience.
+				</div>
+
+				<br>
+				<br>
+				<p style="margin-left: 1em">
+					Tutki siis vapaasti sivustoa!  <br>
+					Palautetta ja kehitysideoita voi laittaa osoitteeseen saska.lohi (at) gmail.com
+				</p>
+				</div>
+				<br>
+				<br>
+			</div>
+
+
+			<!-- Alalaidan valikko -->
+
+			<table style="color: white; width: 100%" class="alavalikko">
+
+				<tr>
+					<td class="alavalikko-100"> <a href="index.html">100 Etusivu			</a></td>
+					<td class="alavalikko-200"> <a href="200.html">200 Työkokemus			</a></td>
+					<td class="alavalikko-300"> <a href="300.html">300 Koulutus				</a></td>
+					<td class="alavalikko-400"> <a href="400.html">400 Luottamustoimet	</a></td>
+					<td class="alavalikko-500"> <a href="500.html">500 Taidot				</a></td>
+					<td class="alavalikko-600"> <a href="600.html">600 Muuta			</a></td>
+				</tr>
+			</table>
+
+
+
+
+</body>
+
+</html>
