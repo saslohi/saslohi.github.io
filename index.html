@@ -9,139 +9,302 @@
 	<meta name="google-site-verification" content="R5CZNubm945XGqDGLBKT4eHblVS52Wtg-ziEUkX3MI8" />
 	<link rel="stylesheet" href="main.css">
 	<script src="suomikello.js"></script>
-	<script src="piilotusToggle.js"></script>
+	<script src="main.js"></script>
 
 	<title>Teksti-CV</title>
 
 	<link rel="icon" type="icon" href="favicon.ico?v=2">
 
-
-
-	<!-- Cufon-skripta teksti-tv fonttia varten -->
-
-	<script src="cufon-yui.js" type="text/javascript"></script>
-	<script src="TerminalVector_400.font.js" type="text/javascript"></script>
-	<script type="text/javascript">
-		Cufon.replace('p'); // Works without a selector engine
-		Cufon.replace('#sub1'); // Requires a selector engine for IE 6-7, see above
-	</script>
-
-
 </head>
 
 <!-- Body -->
 
-<body style="background-color: black;">
-	<font color="white">
-		<font face="TerminalVector" ; size="5" ; color="white">
+<body>
+	<!-- Headeri -->
+	<div id="ylin">
+		<span>P 100 100 </span>
+		<span>Saskan Teksti-CV</span>
+		<span id="clock" class="topright"> </span>
+	</div>
+	<br>
 
-			<style>
-				@font-face {
-					font-family: TerminalVector;
-					src: url("TerminalVector.eot")/* EOT file for IE */
-				}
+	<!-- Banneri -->
+	<div class="ylabanneri-100 ylabanneriSaska">
+		<span style="font-size: xx-large;"> Saska Lohi </span>
+	</div>
+	<div class="teksticvBannerissa etusivuTeksticv">
+		<span>Teksti-CV</span>
+	</div>
 
-				@font-face {
-					font-family: TerminalVector;
-					src: url("TerminalVector.ttf")/* TTF file for CSS3 browsers */
-				}
-			</style>
+	<!-- Otsikot -->
 
-
-
-
-
-			<!-- Headeri -->
-
-
-			<div id="ylin">
-				<span style="text-align: left">P 100 100 </span>
-				<span style="text-align: right">Saskan Teksti-CV</span>
-				<span id="clock" class="topright"> </span>
+	<div id="sisalto">
+		<div id="sivu-100" class="paasivu">
+			<br>
+			<p>
+			<a href="#110" onclick="toggle_visibility('110');">
+				<span class="uutinen-100">110 </span>Kuka on Saska Lohi
+			</a>
+			</p>
+			<div id="110" class="selostus">
+				Saska on kuusamolainen, Helsingissä asuva metsänhoitaja, joka on kiinnostunut kansainvälisistä metsiin, luontoon ja ilmastonmuutokseen liittyvistä asioista ja ilmiöistä
+			</div>
+			<p>
+			<a href="#120" onclick="toggle_visibility('120');">
+				<span class="uutinen-100">120 </span>Mikä ihmeen Teksti-CV? </a>
+			</p>
+			<div id="120" class="selostus">
+				Teksti-CV on Teksti-TV:n inspiroima ansioluettelo, joka tarjoaa vähän erilaisemman pohjan ansioluettelolle kuin perinteinen paperinen CV tai <a href="https://www.linkedin.com/in/saskalohi/"> LinkedIn-profiili </a>
+			</div>
+			<p>
+				<a href="#130" onclick="toggle_visibility('130');">
+				<span class="uutinen-100">130 </span>Mitä täältä löytyy?</a>
+			</p>
+			<div id="130" class="selostus">
+				Linkkejä klikkailemalla pääset tutustumaan Saskan työ- ja opiskeluhistoriaan, ja ajan saatossa ehkä kenties johonkin muuhunkin!
+			</div>
+			<p>
+				<a href="#140" onclick="toggle_visibility('140');">
+				<span class="uutinen-100">140 </span>Millainen olisi unelmatyöni?</a>
+			</p>
+			<div id="140" class="selostus">
+				Ihannetyössäni voisin työskennellä sekä toimistossa että maastossa. Mieluiten ilmastonmuutokseen, metsäkatoon tai köyhyyteen liittyvien teemojen parissa, kansainvälisessä ympäristössä. Tykkään työskennellä osana ryhmää, mutta pidän myös hiljaisista tunneista, jolloin voin keskittyä yhteen asiaan kunnolla. Olen kuitenkin joustava, ja avoin kaikille ehdotuksille ja mahdollisuuksille.
+			</div>
+			<p>
+			<a href="#150" onclick="toggle_visibility('150');">
+				<span class="uutinen-100">150 </span>What on earth is this place?</a>
+			</p>
+			<div id="150" class="selostus">
+				This is my (Saska Lohi) personal web page, inspired by a legendary <a href="https://en.wikipedia.org/wiki/Teletext">teletex</a> portal called <a href="https://yle.fi/aihe/tekstitv"> Teksti-TV by YLE (Finnish Broadcasting Company)</a>. I could make an English version in the future, but the design might not make any sense if you are not familiar with YLE's teletext pages, so at least at the moment my Teksti-CV is targeted to Finnish audience.
 			</div>
 
 			<br>
+			<p style="margin-left: 1em">
+				Tutki siis vapaasti sivustoa!  <br>
+				Palautetta ja kehitysideoita voi laittaa osoitteeseen saska.lohi (at) gmail.com
+			</p>
+			<br> 
+		</div>
 
-			<!-- Banneri -->
-
-			<div style="ylabanneri-200"></div>
-			<div style="background-color: blue; width: 100&#37;; text-align: justify; color: white; height: 65">
-				<font size="7"> Saska Lohi </font>
-			</div>
-			<div style="background-color: white; width: 100&#37;; text-align: left; color: blue; height: 25">Teksti-CV</div>
-			<div style="ylabanneri-200"></div>
-
-
-			<!-- Otsikot -->
-
-			<div id="sisalto">
+		<div id="sivu-200" class="paasivu">
 				<br>
-				<br>
+				<p> Viimeisimmät työpaikat: </p>
 				<p>
-					<a href="#110" onclick="toggle_visibility('selostus1');">
-						<font style="color: white">110 </font>Kuka on Saska Lohi? </a>
+					<a href="#210" onclick="toggle_visibility('210_selostus');">
+						<span id="210" class="uutinen-200">210 </span>Luonnonvarakeskus - VMI-tutkimusavustaja 5-11/2017 </a>
 				</p>
-				<div id="selostus1" class="selostus">
-					Saska on kuusamolainen, helsinkiläistynyt metsänhoitaja, joka on kiinnostunut kansainvälisistä metsiin, luontoon ja ilmastonmuutokseen liittyvistä asioista ja ilmiöistä
+				<div id="210_selostus" class="selostus">
+					VMI eli Valtakunnan Metsien Inventointi on projekti, jossa kartoitetaan Suomen metsien tilaa <br>
+					Työtehtäviäni olivat mm. <br>
+					- koealojen paikantaminen ja perustaminen maastossa <br>
+					- puustotunnusten mittaus ja määritys VMI-koealoilla <br>
 				</div>
 				<p>
-					<a href="#120" onclick="toggle_visibility('selostus2');">
-						<font style="color: white">120 </font>Mikä ihmeen Teksti-CV? </a>
+					<a href="#220" onclick="toggle_visibility('220_selostus');">
+						<span id="220" class="uutinen-200">220 </span>Zimbabwen AIDS-Orvot Ry/Dzikwa Trust - Vapaaehtoistyöntekijä/tutkija Zimbabwessa 9-12/2016 </a>
 				</p>
-				<div id="selostus2" class="selostus">
-					Teksti-CV on Teksti-TV:n inspiroima ansioluettelo, joka tarjoaa vähän erilaisemman pohjan ansioluettelolle kuin perinteinen paperinen CV tai <a href="https://www.linkedin.com/in/saskalohi/"> LinkedIn-profiili </a>
+				<div id="220_selostus" class="selostus">
+					Syksyn 2016 vietin Zimbabwessa, Hararen lähiössä Dzivarasekwassa <br>
+					Autoin järjestön metsäprojektissa, ja mentoroin Binduran yliopiston harjoittelijoita heidän opinnäytetöiden kanssa.<br>
+					Tein myös haastattelututkimusta paikallisten lasten ja nuorten metsiin liittyvistä tiedoista ja taidoista, tavoitteena tieteellinen julkaisu <br>
+					Kirjoitin lisäksi Metsänhoitaja-lehteen artikkelin tästä metsäprojektista, ja järjestin siivous- sekä metsänistutustapahtumat Dzivarasekwassa.
 				</div>
 				<p>
-					<a href="#130" onclick="toggle_visibility('selostus3');">
-						<font style="color: white">130 </font>Mitä täältä löytyy?</a>
+					<a href="#230" onclick="toggle_visibility('230_selostus');">
+						<span id="230" class="uutinen-200">230 </span>UPM Silvesta/Uniforst - Maastotyöntekijä 7/2016</a>
 				</p>
-				<div id="selostus3" class="selostus">
-					Linkkejä klikkailemalla pääset tutustumaan Saskan työ- ja opiskeluhistoriaan, ja ajan saatossa ehkä kenties johonkin muuhunkin!
+				<div id="230_selostus" class="selostus">
+					Heinäkuun 2016 työskentelin maastossa Satakunnassa. <br>
+					Määritimme ja merkkasimme maastoon voimalinjojen raivausvyöhykkeiden rajoja kolmihenkisessä tiimissä.<br>
 				</div>
 				<p>
-					<a href="#140" onclick="toggle_visibility('selostus4');">
-						<font style="color: white">140 </font>Millainen olisi unelmatyöni?</a>
+					<a href="#240" onclick="toggle_visibility('240_selostus');">
+						<span id="240" class="uutinen-200">240</span> Helsingin yliopisto - Erikoisjulkaisun 'Drought and Dryland Management' koordinaattori 2-6/2016</a>
 				</p>
-				<div id="selostus4" class="selostus">
-						Ihannetyössäni voisin työskennellä sekä toimistossa että maastossa. Mieluiten ilmastonmuutokseen, metsäkatoon tai köyhyyteen liittyvien teemojen parissa, kansainvälisessä ympäristössä. Tykkään työskennellä osana ryhmää, mutta pidän myös hiljaisista tunneista, jolloin voin keskittyä yhteen asiaan kunnolla. Olen kuitenkin joustava, ja avoin kaikille ehdotuksille ja mahdollisuuksille.
+				<div id="240_selostus" class="selostus">
+					Toimin tieteellisen erikoisjulkaisun julkaisuprosessin koordinaattorina. <br>
+					Hoidin julkaisuun liittyviä käytännön töitä kuten: <br>
+					- yhteydenpito kirjoittajiin ja tiedejournaliin <br>
+					- tarkastajien etsiminen käsikirjoituksille <br>
+					- painotalojen kilpailuttaminen <br>
+					- budjetointi ja yhteistyö rahoittajan kanssa <br>
+					<a href="https://www.silvafennica.fi/issue/issue/1630">Klikkaa päästäksesi lukemaan julkaisua</a>
 				</div>
 				<p>
-					<a href="#150" onclick="toggle_visibility('selostus5');">
-						<font style="color: white">150 </font>What on earth is this place?</a>
+					<a href="#250" onclick="toggle_visibility('250_selostus');">
+						<span id="250" class="uutinen-200">250 </span>Helsingin yliopisto - Kurssikoordinaattori 'Managing Sustainable Forest Landscapes' 4-8/2015</a>
 				</p>
-				<div id="selostus5" class="selostus">
-					This is my (Saska Lohi) personal web page, inspired by a legendary <a href="https://en.wikipedia.org/wiki/Teletext">teletex</a> portal called <a href="https://yle.fi/aihe/tekstitv"> Teksti-TV by YLE (Finnish Broadcasting Company)</a>. I could make an English version in the future, but the design might not make any sense if you are not familiar with YLE's teletext pages, so at least at the moment my Teksti-CV is targeted to Finnish audience.
+				<div id="250_selostus" class="selostus">
+					Kaksiviikkoinen intensiivinen kansainvälinen kesäkurssi kestävästä metsätaloudesta, 25 osallistujaa, 13 eri kansallisuutta edustettuna<br>
+					Työtehtäviä mm. <br>
+					- Kurssiohjelman suunnittelu ja aikataulutus <br>
+					- Maastovierailun suunnitteleminen ja järjestäminen <br>
+					- Luennoitsijoiden rekrytointi <br>
+					- ym. kurssin järjestämiseen liittyvät asiat. <br>
+					<a href="http://blogs.helsinki.fi/sustainableforests-2015/">Kurssin blogi vuosilta 2015 & 2017</a>
 				</div>
-
-				<br>
-				<br>
-				<p style="margin-left: 1em">
-					Tutki siis vapaasti sivustoa!  <br>
-					Palautetta ja kehitysideoita voi laittaa osoitteeseen saska.lohi (at) gmail.com
+				<p>
+					<a href="#260" onclick="toggle_visibility('260_selostus');">
+						<span id="260" class="uutinen-200">260 </span>Kuusamon kaupunki - Harjoittelija, metsä- ja ympäristöasiat 6-9/2014 </a>
 				</p>
+				<div id="260_selostus" class="selostus">
+					Työtehtäviäni olivat mm. <br>
+					- Kuusamon kaupungin metsästrategian päivittäminen ja suunnitteleminen <br>
+					- Ympäristötarkastajan avustaminen, vastuualueena laittomat kaatopaikat <br>
+					- Rakennusoikeusrekisterin päivittämistä <br>
+				</div>
+				<p>
+					<a href="#270" onclick="toggle_visibility('270_selostus');">
+						<span id="270" class="uutinen-200">270 </span>Helsingin yliopisto - Opetusavustaja Hyytiälän kenttäkursseilla 5-7/2012 </a>
+				</p>
+				<div id="270_selostus" class="selostus">
+					Toimin metsätieteiden kenttäkursseilla opetusavustajana. <br>
+					Kurssien aihepiirejä mm. <br>
+					- Metsä- ja suoekologia <br>
+					- Metsänarviointi ja metsäsuunnittelu <br>
+					- Metsä- ja puuteknologia <br>
+				</div>
+				<p>
+					<a href="#280" onclick="toggle_visibility('280_selostus');">
+						<span id="280" class="uutinen-200">280 </span>Kuusamon kaupunki - Maanrakennustyöntekijä 4/2008-5/2009</a>
+				</p>
+				<div id="280_selostus" class="selostus">
+					Lukion jälkeen olin vuoden töissä Kuusamon kaatopaikan toimistolla <br>
+					Työtehtäviä mm. <br>
+					- Asiakaspalvelu <br>
+					- Kierrätysmäärien tilastointi <br>
+					- Kassan tilitys ym. <br>
 				</div>
 				<br>
+				<p style="margin-left: 1em"> <a href="http://www.uniforst.fi/metsaylioppilaan-mietteita-kaannostyostaan/">Näiden lisäksi erilaisia lyhyempiä ja satunnaisempia työkeikkoja, mm. FSC-sertifiointiraporttien kääntämistä, maaperälaboratoriossa avustamista, messuopastusta ym.</a>
 				<br>
-			</div>
+		</div>
+
+		<div id="sivu-300" class="paasivu">
+			<br>
+				<p> Tutkinnot: </p>
+				<p> Maatalous- ja metsätieteiden maisteri, metsänhoitaja - Helsingin yliopisto 2015 </p>
+				<p> Master of Science in Forest Ecology and Management - Michigan Technological University 2015 </p>
+				<p> Maatalous- ja metsätieteiden kandidaatti - Helsingin yliopisto 2012 </p>
+				<p> Ylioppilas - Kuusamon lukio 2008 </p>
+				<br>
+				<p>Opinnot:
+					<p> <a href="https://www.newswise.com/articles/michigan-tech-pioneers-transatlantic-forestry-masters">ATLANTIS-maisteriohjelmassa 2012-2015 (Transatlanttinen metsätieteiden maisteriohjelma) </a></p>
+					<p>
+						<a href="https://www.mmsaatio.fi/rahoituksen-tuloksia/2012/vaihto-opiskelut-michiganin-ylaniemimaalla-yhdysvalloissa.html"> <span style="color:purple">310 </span> Michigan Technological University - maisteriopinnot 2012-2015 </a>
+					</p>
+					<p style="margin-left: 4em">Pro gradu <a href="https://digitalcommons.mtu.edu/etdr/28/">
+					"Hitchhiking Bats on the Great Lakes of North America"</a></p>
+					<p>
+						<span style="color: purple"> 320 </span> Helsingin yliopisto - maisteriopinnot 2012-2015 </p>
+					<p style="margin-left: 4em">
+						Pääaine metsien ekologia ja käyttö <br>
+						Sivuaineet metsä- ja riistaeläintiede sekä trooppinen metsänhoito ja trooppisten metsien ekologia </p>
+
+					<p> <a href="https://www.mmsaatio.fi/rahoituksen-tuloksia/2019/vaihto-opiskelut-ruotsissa-uumajassa.html">
+						<span style="color: purple">330 </span> SLU Umeå - vaihto-opinnot kevät 2014 </a></p>
+					<p>
+						<span style="color: purple"> 340 </span> Helsingin yliopisto - Maatalous- ja metsätieteiden kandidaatti 2009-2012
+					<p style="margin-left: 4em">
+						Pääaine metsäekologia, sivuaine metsänarvioimistiede <br>
+						Kandidaatintutkielma: 'Batrachochytrium dendrobatidis ja Geomyces destructans - Millaisia ovat nämä tappajasienet?' </p>
+						<p style="margin-left: 4em">
+						<a href="https://www.metsatieteenaikakauskirja.fi/pdf/article6888.pdf">Tutustu kandintyöni aiheeseen esim. Metsätieteen aikakauskirjan artikkelini kautta! </a> </p>
+					<p>
+						<span style="color: purple"> 350 </span> Kuusamon lukio - ylioppilastutkinto 2005-2008 </p>
+						<br>
+		</div>
+
+		<div id="sivu-400" class="paasivu">
+			<br>
+			<p> Luottamustoimet:
+				<p>
+					<a href="#410" onclick="toggle_visibility('410_selostus');">
+						<span style="color: #CC9900">410 </span>Helsingin metsäylioppilaat ry - Kansainvälisyysvastaava 2012-2013</a>
+				</p>
+						<div id="410_selostus" class="selostus">
+						Toimin Metsäylioppilaat Ry:n hallituksen jäsenenä, joka vastasi kansainvälisyyteen liittyvistä asioista <br>
+						Hain rahaa kansainvälisiin aktiviteetteihin, kuten tapahtumien osallistumismaksuihin ja lentolippuihin<br>
+						Mainostin kv-toimintaa ja innostin metsäylioppilaita lähtemään maailmalle, eritoten IFSA:n tapahtumiin sekä vaihto-opintoihin <br>
+					 </div>
+
+				<p>
+					<a href="#420" onclick="toggle_visibility('420_selostus');">
+						<span style="color: #CC9900">420 </span>IFSS Finland 2011 Järjestämistoimikunnan jäsen - 2009-2011  </a>
+				</p>
+				<div id="420_selostus" class="selostus">
+					Olin mukana toimikunnassa, joka järjesti metsäylioppilaiden kansainvälisen maailmankokouksen (symposiumin) Suomessa vuonna 2011 <br>
+					Järjestelyt aloitettiin syksyllä 2009, ja liityin mukaan vastaamaan ruokahuollosta symposiumin alkuosan ajalta <br>
+					Kilpailutin ravintoloita ja pitopalveluita, ja toimin symposiumin aikana sekalaisissa järjestelyhommissa <br>
+					Symposiumiin osallistui yli 100 metsäylioppilasta ympäri maailmaa, kaikilta mantereilta paitsi Etelänapamantereelta <br>
+				 </div>
+				<p>
+					<a href="#430" onclick="toggle_visibility('430_selostus')">
+						<span style="color: #CC9900">430 </span>Helsingin metsäylioppilaat ry - Forstihuuto-lehden toimittaja 2009-2012  </a>
+				</p>
+				<div id="430_selostus" class="selostus">
+					Kirjoittelin juttuja Metsäylioppilaiden järjestölehteen <br>
+				</div>
+				<br>
+		</div>
+
+		<div id="sivu-500" class="paasivu">
+
+		<br>
+		<div class="vasen">
+		<p> <b>Kielitaito:</b>
+		<br>
+		<p> Suomi 	<span style="color: green"> (äidinkieli) </span> </p>
+		<p> Englanti <span style="color: green"> (erinomainen) </span> </p>
+		<p style="font-size: 0.85em; padding-left: 5%;"><span style="color: white"> TOEFL-pisteet:</span> <span style="color: green"> 115</span><span style="color: white">/</span><span style="color: green">120 </span></p>
+		<p><span font-size="5" style="color: white">Ruotsi	</span><span style="color: green"> (tyydyttävä) </span> </p>
+		<p> Ranska 	<span style="color: green"> (alkeet)</span>	</p>
+		<p> Espanja <span style="color: green"> (alkeet)</span> </p>
+		<p> Saksa 	<span style="color: green"> (alkeet)</span> </p>
+		</div>
+	
+		<div class="oikea"> 
+		<p> <b>ATK-taidot:</b>
+		<br>
+		<p> Windows, Linux, Azure
+		<p> MS Office, IIS
+		<p> QGIS, Leaflet, FME
+		<p> Twitter, Facebook, Instagram
+		<p> Java, Python, web (html, CSS, .js)
+		<p> MSSQL, PostGIS
+		</div>
+		</div>
+
+		<div id="sivu-600" class="paasivu">
+			<p> Harrastuksia:
+				<p> Murtomaahiihto
+				<p> Pyöräily
+				<p> Lumilautailu
+				<p> Kiipeily
+				<p> Pianon soitto
+				<p> Jooga
+				<p> Golf
+				<br>
+				<br>
+				<p> Kuvia näistä voi löytää esim.<a href="https://www.instagram.com/selohi/"> Instagram-feedistäni jos kiinnostaa! </a>
+				<br>
+		</div>
+
+	</div>
 
 
-			<!-- Alalaidan valikko -->
+	<!-- Alalaidan valikko -->
 
-			<table style="color: white; width: 100%" class="alavalikko">
-
-				<tr>
-					<td class="alavalikko-100"> <a href="index.html">100 Etusivu			</a></td>
-					<td class="alavalikko-200"> <a href="200.html">200 Työkokemus			</a></td>
-					<td class="alavalikko-300"> <a href="300.html">300 Koulutus				</a></td>
-					<td class="alavalikko-400"> <a href="404.html">400 Luottamustoimet	</a></td>
-					<td class="alavalikko-500"> <a href="500.html">500 Taidot				</a></td>
-					<td class="alavalikko-600"> <a href="600.html">600 Muuta			</a></td>
-				</tr>
-			</table>
-
-
-
-
+	<table class="alavalikko">
+		<tr>
+		<td class="alavalikko-100"> <a href="#sivu-100" onclick="nayta_sivu('sivu-100',' ylabanneri-100', 'etusivuTeksticv');">100 Etusivu</a></td>
+		<td class="alavalikko-200"> <a href="#sivu-200" onclick="nayta_sivu('sivu-200',' ylabanneri-200', 'uutinen-200');">200 Työkokemus</a></td>
+		<td class="alavalikko-300"> <a href="#sivu-300" onclick="nayta_sivu('sivu-300',' ylabanneri-300', 'uutinen-300');">300 Koulutus</a></td>
+		<td class="alavalikko-400"> <a href="#sivu-400" onclick="nayta_sivu('sivu-400',' ylabanneri-400', 'uutinen-400');">400 Luottamustoimet</a></td>
+		<td class="alavalikko-500"> <a href="#sivu-500" onclick="nayta_sivu('sivu-500',' ylabanneri-500', 'uutinen-500');">500 Taidot</a></td>
+		<td class="alavalikko-600"> <a href="#sivu-600" onclick="nayta_sivu('sivu-600',' ylabanneri-600', 'uutinen-600');">600 Muuta</a></td>
+		</tr>
+	</table>
 </body>
 
 </html>

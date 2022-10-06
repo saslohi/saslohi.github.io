@@ -24,6 +24,12 @@ a:active {
   text-decoration: underline;
 }
 
+body {
+  background-color: black;
+  color: white;
+  font-family: TerminalVector;
+  height: auto;
+}
 
 @font-face {
   font-family: TerminalVector;
@@ -44,87 +50,87 @@ a:active {
 @media screen and (max-width: 768px) {
 
     .topright {
-      visibility: hidden;
+      /* visibility: hidden; */
+      position: sticky;
     }
     table {
       margin-left: 10%;
+      width: 100%;
     }
     td {
-      display: table-row;
+      display: block;
       margin: 0px auto;
+      width: 100%;
+      padding-top: 3px;
+      padding-bottom: 3px;
     }
+
+
+
 }
 
-.ylin {
+#ylin {
   background-color: black;
   width: 100%;
-  height: 5;
-  padding-top: 10%;
-  margin-top: 10px;
-  margin-left: 10px;
+}
+
+.alavalikko {
+  color: white;
+  width: 100%;
+  margin-left: -10px;
 }
 
 .alavalikko-100 {
   background-color: blue;
   text-align: center;
-  width: 300;
-  height: 30;
 }
 
 .alavalikko-200 {
   background-color: red;
   text-align: center;
-  width: 300;
-  height: 30;
 }
 
 .alavalikko-300 {
   background-color: purple;
   text-align: center;
-  width: 300;
-  height: 30;
 }
 
 .alavalikko-400 {
   background-color: #CC9900;
   text-align: center;
-  width: 300;
-  height: 30;
 }
 
 .alavalikko-500 {
   background-color: green;
   text-align: center;
-  width: 300;
-  height: 30;
 }
 
 .alavalikko-600 {
   background-color: #FF6F00;
   text-align: center;
-  width: 300;
-  height: 30;
 }
 
 .alavalikko-700 {
   background-color: #FF6F00;
   text-align: center;
-  width: 300;
-  height: 30;
+}
+
+.ylabanneriSaska {
+  width: 100%;
+  color: white;
+  height: auto;
+  padding-left: 5px;
+  font-size: xx-large;
+  position: static;
 }
 
 .ylabanneri-100 {
   background-color: blue;
-  width: 100%;
-  color: white;
-  height: 20
+
 }
 
 .ylabanneri-200 {
   background-color: red;
-  width: 100%;
-  color: white;
-  height: 20
 }
 
 .ylabanneri-300 {
@@ -176,4 +182,85 @@ a:active {
   margin-left: 4em;
   font-size: smaller;
   font-style: oblique;
+}
+
+.teksticvBannerissa {
+  background-color: white;
+  width: 100%;
+  text-align: left;
+  height: auto;
+  padding-left: 5px;
+  position: static;
+} 
+
+.etusivuTeksticv {
+  color: blue;
+}
+
+.uutinen-100 {
+  color: white;
+}
+
+.uutinen-200 {
+  color: red;
+}
+
+.uutinen-300 {
+  color: purple;
+}
+
+.uutinen-400 {
+  color: #CC9900;
+}
+
+.uutinen-500 {
+  color: green;
+}
+
+.uutinen-600 {
+  color: pink;
+}
+
+.uutinen-700 {
+  color: #FF6F00;
+}
+
+#sivu-100 {
+  display: block;
+}
+
+#sivu-200 {
+  display: none;
+}
+
+#sivu-300 {
+  display: none;
+}
+
+#sivu-400 {
+  display: none;
+}
+
+#sivu-500 {
+  display: none;
+}
+
+#sivu-600 {
+  display: none;
+}
+
+#sivu-700 {
+  display: none;
+}
+
+/* Taidot-sivun taulukot oikeille kohille */
+
+.vasen {
+  float: left;
+  width: 33%;
+  padding-left: 1%;
+}
+
+.oikea {
+  
 }
