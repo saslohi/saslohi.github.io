@@ -25,6 +25,10 @@ function nayta_sivu(id, banneri, teksti_cv) {
   
   // Tarvitsee timeoutin ja scrollauksen mobiilimoodia varten
 
-  setTimeout(function() {window.scrollTo(0,0);}, 10);
+  setTimeout(function() {window.scrollTo({
+    top: 10,
+    left: 0,
+    behavior: 'smooth'
+  });}, 10);
   
 }
